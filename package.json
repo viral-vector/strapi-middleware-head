@@ -1,0 +1,19 @@
+{
+  "name": "strapi-middleware-head",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Middleware to attach a head with server-side routing for the Strapi framework",
+  "main": "./index",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "koa-router": "^7.4.0"
+  },
+  "author": {
+    "name": "viral-vector"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/viral-vector/strapi-middleware-head.git"
+  },
+  "license": "MIT"
+}
