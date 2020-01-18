@@ -3,9 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "description": "Middleware to attach a head with server-side routing for the Strapi framework",
+  "keywords": [
+    "strapi"
+  ],
   "main": "./index",
   "scripts": {
-    "postinstall" : "./install.js"
+    "postinstall" : "node ./install.js"
   },
   "dependencies": {
     "lodash": "^4.17.11",
