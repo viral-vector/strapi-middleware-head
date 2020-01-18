@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "Middleware to attach a head with server-side routing for the Strapi framework",
   "main": "./index",
+  "scripts": {
+    "postinstall" : "./install.js"
+  },
   "dependencies": {
     "lodash": "^4.17.11",
     "koa-router": "^7.4.0"

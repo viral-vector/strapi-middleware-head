@@ -5,8 +5,6 @@ const { existsSync } = require('fs-extra');
 const _ = require('lodash');
 const loadFiles = require('strapi/lib/load/load-files');
 const loadConfig = require('strapi/lib/load/load-config-files');
-
-
 const glob = require('strapi/lib/load/glob');
 
 module.exports = async ({ dir }) => {
