@@ -12,7 +12,7 @@ module.exports = async ({ dir }) => {
 
   if (!existsSync(headDir)) {
     throw new Error(
-      `Missing app folder. Please create one in your app root directory`
+      `Missing head folder. Please create one in your head root directory`
     );
   }
 

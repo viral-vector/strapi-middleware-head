@@ -16,7 +16,7 @@ module.exports = strapi => {
 
     if (_.isUndefined(action) || !_.isFunction(action)) {
       return strapi.log.warn(
-        `Ignored attempt to bind route '${value.method} ${value.path}' to unknown controller/action.`
+        `Ignored attempt to bind route '${value.method} ${value.path}' to unknown head controller/action.`
       );
     }
 
