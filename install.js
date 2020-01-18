@@ -6,7 +6,7 @@ const path = require('path');
 /**
  * Create dir structure
  */
-let dr = path.join(__dirname, '../..', 'head-test');
+let dr = path.join(__dirname, '../..', 'head');
 
 if(!fs.existsSync(dr)){
   fs.mkdirSync(dr);
