@@ -22,15 +22,18 @@ module.exports = strapi => {
      */
     initialize(){
       this.boot().then(result => {
-        // const router = new Router({
-        //   prefix: null,
-        // });
-
-        _.forEach(strapi.head.config.routes, value => {
-          composeEndpoint(value, {plugin: 'head', router: strapi.router });
+        const router = new Router({
+          prefix: null,
         });
 
-        // strapi.app.use(router.routes()).use(router.allowedMethods());
+        _.forEach(strapi.head.config.routes, value => {
+          composeEndpoint(value, {
+            plugin: '',
+            router: ['','/'].includes(value.path)? router : strapi.router
+          });
+        });
+
+        strapi.app.use(router.routes()).use(router.allowedMethods());
       })
     },
 
